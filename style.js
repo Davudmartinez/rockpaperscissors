@@ -89,7 +89,7 @@ document.querySelector("#btn-play-again").addEventListener("click", (event) => {
     //cho máy chạy lại
     clearInterval(interval);
     interval = setInterval(handleChange, 100);
-    //xoa actived tra lai kha nang click
+    //xoá actived trả lại khả năng click
     playerItem.forEach((_item) => {
         _item.classList.remove("actived");
         _item.style.pointerEvents = "";
@@ -101,3 +101,5 @@ document.querySelector("#btn-play-again").addEventListener("click", (event) => {
 
     //location.reload();
 });
+
+//Thịnh Nguyễn đẹp trai vl hihi
