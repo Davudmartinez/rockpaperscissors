@@ -46,7 +46,7 @@ const compare = (valuePlayer, valueComputer) => {
 
 //
 const playerItem = document.querySelectorAll(".user");
-//duyet qua cac item(nut) cua player
+//duyệt qua các item(nút) của player
 playerItem.forEach((item) => {
     //nếu như có nút nào trong đó diễn ra sk click
     item.addEventListener("click", (event) => {
@@ -84,9 +84,9 @@ playerItem.forEach((item) => {
     });
 });
 
-//su kien nut choi lai
+//sự kiện chơi lại
 document.querySelector("#btn-play-again").addEventListener("click", (event) => {
-    //cho may chay lai
+    //cho máy chạy lại
     clearInterval(interval);
     interval = setInterval(handleChange, 100);
     //xoa actived tra lai kha nang click
@@ -94,9 +94,9 @@ document.querySelector("#btn-play-again").addEventListener("click", (event) => {
         _item.classList.remove("actived");
         _item.style.pointerEvents = "";
     });
-    //xoa thong bao
+    //xoá thông báo
     document.querySelector(".notification").innerHTML = "";
-    //an nut choi lai
+    //ấn nút chơi lại
     document.querySelector(".play-again").classList.add("d-none");
 
     //location.reload();
